@@ -108,9 +108,7 @@ function dibujarTarea(){
                 console.log("Hay que editar")
                 
             }
-        })
-
-        
+        })       
 })
 
 // codigo para eventos 
@@ -133,6 +131,7 @@ function dibujarEvento(){
         let pEvento= document.createElement("p")
 
         divContainer.className = "contenedor-Evento"
+    
         
         let selectC = document.createElement('p')
 
