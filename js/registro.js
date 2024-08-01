@@ -10,7 +10,7 @@ formRegister.addEventListener('submit', (e)=>{
     const users = JSON.parse(localStorage.getItem('users')) || []
     const listUsersRegister = users.find(user => user.email === email)
      
-    if (listUsersRegister ) {
+    if (!listUsersRegister ) {
         return alert('El usuario ya esta registrado')
         
     }

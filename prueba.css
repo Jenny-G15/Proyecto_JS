@@ -5,7 +5,6 @@
 	font-family: "Montserrat", sans-serif;
 }
 body{
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -124,23 +123,201 @@ form label i{
 .submit:hover{
 	background-color: #333;
 }
-/*formulario oculto*/
 
-.hide{
-	position: absolute;
-	transform: translateY(-300%);
+/* administracion*/
+
+.color{
+    height: 500px;
+	width: 820px;
+	max-width: 950px;
+	display: flex;
+	margin: 10px;
+	
+}
+.admiTarea{
+   	width: 49%;
+	display: flex;
+	text-align: center;
+	background-color: rgba(193, 85, 66, 0.975);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 0 2px 5px rgba(12, 12, 12, 1.5); 
+
+}
+.admiContenido{
+	width: 100%;
+	padding: 0 30px;
+}
+.admiContenido h3{
+	font-size: 1.5rem;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	color: #fff;
+}
+.admiContenido input{
+	width: 60%;
+	padding: 7px;
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	color: #333;
+}
+#prioridades{
+    width: 23%;
+	padding: 5px;
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	color: #333;
+}
+#agregar{
+	 background-color: #666260eb;
+	 color: #fff;
+	 border-radius: 15px;
+	 border: none;
+	 padding: 8px 13px;
+	 cursor: pointer;
+	 margin-top: 8px;
+	 box-shadow: 0 2px 5px rgba(0, 0, 0, .1); 
+	 margin-block-start: 1em;
+}
+#agregar:hover{
+	background-color: #c46e35f2;
+}
+#contenedorTareas{
+	width: 100%;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	justify-items: left;
+	margin-block-start: 2em;
+	
+	
+}
+.color hr{
+	margin-block-start: 1.3em;
+}
+
+/*eventos*/
+
+.eventos{
+   	width: 49%;
+	display: flex;
+	text-align: center;
+	background-color: rgba(150, 146, 144, 0.947);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin-left: 16px;
+	box-shadow: 0 2px 5px rgba(12, 12, 12, 1.5); 
+	
+}
+.evento{
+	width: 100%;
+	padding: 0 30px;
+}
+.evento h3{
+	font-size: 1.5rem;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	color: #fff;
+}
+#evento{
+	width: 55%;
+	padding: 7px;
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	color: #333;
+}
+#start{
+	width: 30%;
+	padding: 5px;
+	background-color: #ffffff;
+	border: none;
+	outline: none;
+	border-radius: 8px;
+	color: #333;
+}
+#agregarEvento{
+	 background-color: #c46e35f2;
+	 color: #fff;
+	 border-radius: 15px;
+	 border: none;
+	 padding: 8px 13px;
+	 cursor: pointer;
+	 margin-top: 8px;
+	 box-shadow: 0 2px 5px rgba(0, 0, 0, .1); 
+	 margin-block-start: 1em;
+}
+#agregarEvento:hover{
+	background-color: #353333;
+}
+#contenedorEventos{
+	width: 100%;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	margin-block-start: 2em;
+	
+
+}
+
+.contenedor-tareas{
+	display: flex;
+	justify-content: space-between;
+	padding:10px;
+	align-items: center;
+	
+}
+.contenedor-tareas button{
+     background-color: #666260eb;
+	 color: #fff;
+	 border-radius: 8px;
+	 border: none;
+	 padding: 6px 10px;
+	 cursor: pointer;
+	 margin: -18px;
+
+}
+.contenedor-tareas p{
+     font-size: 17px;
+
+}
+.contenedor-Evento{
+	display: flex;
+	justify-content: space-between;
+	padding:10px;
+	align-items: center;
+
+}
+.contenedor-Evento button{
+     background-color: #bc683ef5;
+	 color: #fff;
+	 border-radius: 8px;
+	 border: none;
+	 padding: 6px 10px;
+	 cursor: pointer;
+	 margin: -25px;
+
 }
 
 /* Responsive */
 
 
-@media (max-width:750px){
+@media (max-width:800px){
 	body {
 		font-size: 12px;
 	}
 }
 	
-@media (max-width:580px){
+@media (max-width:360px){
 	body {
 		font-size: 15px;
 	}
@@ -164,6 +341,28 @@ form label i{
 		padding: 20px;
 		border-bottom-left-radius:20px;
 		border-top-right-radius: 0;
+	}
+
+	.color{
+	   height: auto;
+	   flex-direction: column;
+	}
+	.admiTarea{
+		width: 100%;
+		padding: 20px;
+		border-top-left-radius:20px;
+		border-top-right-radius:20px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		
+	}
+	.eventos{
+	    width: 100%;
+		padding: 20px;
+		border-top-left-radius:20px;
+		border-top-right-radius:20px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 	}
 }
 	
